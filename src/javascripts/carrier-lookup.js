@@ -19,8 +19,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	function handleResult(result) {
 		console.log(result);
 		console.log("\n");
-		console.log(result['carrier']);
-		carrierLookupResults.innerHTML = result['carrier'];
+		console.log("CARRIER" + result["carrier"]);
+		carrierLookupResults.innerText = result["carrier"];
 	}
 
 	function performApiFetch(url, resultsElement) {
@@ -72,11 +72,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 		performApiFetch(url, carrierLookupResults);
 	});
-
-
-
-
-
 
 
 });
