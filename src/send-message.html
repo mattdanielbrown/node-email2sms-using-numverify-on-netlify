@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Node Email2SMS | Home</title>
+	<link rel="stylesheet" href="stylesheets/main.scss">
+	<script type="module" src="javascripts/app.js"></script>
+</head>
+<body>
+	<a class="skip-link" href="#main" tabindex="1">Skip to main content</a>
+	
+	<header>
+		<nav id="primary-navigation">
+			<ul class="navbar-elements">
+				<li><a href="index.html" class="site-logo">LOGO</a></li>
+				<li>
+					<button type="button" id="menu-button" aria-expanded="false" aria-controls="navigation-list">
+						<span class="text-content">Menu</span>
+					</button>
+				</li>
+			</ul>
+			<ul id="navigation-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="lookup-carrier.html">Lookup Carrier</a></li>
+				<li><a href="send-message.html" aria-current="page">Send Message</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="help.html">Help</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="main-content">
+		<section class="site-and-page-header">
+			<hgroup>
+				<h1>Node Email2SMS</h1>
+				<p>Send Message</p>
+			</hgroup>
+		</section>
+		<section id="send-message-section">
+			<h2>Welcome</h2>
+			
+			<form action="#" id="send-message-form">
+				<fieldset>
+					<legend>Recipient Info</legend>
+
+					<label for="phone-input">Recipient Phone Number</label>
+					<input type="tel" name="phone-input" id="phone-input">
+
+					<ul class="radio-selection-list">
+						<li>
+							<input type="radio" name="sms-or-mms-selection" id="sms-selection" value="sms" checked>
+							<label for="sms-selection">Send as an SMS message</label>
+						</li>
+						<li>
+							<input type="radio" name="sms-or-mms-selection" id="mms-selection" value="mms">
+							<label for="mms-selection">Send as an MMS message</label>
+						</li>
+					</ul>
+
+					<label for="carrier-select">Recipient Carrier</label>
+					<select name="carrier-select" id="carrier-select">
+						<option value="att">AT&amp;T</option>
+						<option value="tmobile">TMobile</option>
+						<option value="verizon">Verizon</option>
+					</select>
+
+				</fieldset>
+
+				<input type="submit" value="Send Message">
+
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>Copyright &copy; 2024. All Rights Reserved.</p>
+	</footer>
+</body>
+</html>

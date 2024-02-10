@@ -1,0 +1,36 @@
+{
+  "name": "node-email2sms-using-numverify-on-netlify",
+  "version": "1.0.0",
+  "description": "Using email to send text messages, with NumVerify to discover phone number carrier, and deployed on Netlify.",
+  "main": "app.js",
+  "repository": "git@github.com:mattdanielbrown/node-email2sms-using-numverify-on-netlify.git",
+  "author": "Matt Daniel Brown <mattbrown@onmail.com>",
+  "license": "MIT",
+  "private": true,
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.11.0",
+    "autoprefixer": "^10.4.17",
+    "buffer": "^5.5.0||^6.0.0",
+    "crypto-browserify": "^3.12.0",
+    "events": "^3.1.0",
+    "os-browserify": "^0.3.0",
+    "parcel": "latest",
+    "path-browserify": "^1.0.0",
+    "postcss": "^8.4.35",
+    "process": "^0.11.10",
+    "sass": "^1.70.0",
+    "stream-browserify": "^3.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "inter-ui": "^4.0.2",
+    "modern-normalize": "^2.0.0",
+    "sanitize.css": "^13.0.0"
+  }
+}

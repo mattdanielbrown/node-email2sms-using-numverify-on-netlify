@@ -1,0 +1,8 @@
+html {
+	box-sizing: border-box !important;
+}
+
+*,*::before,*::after {
+	box-sizing: inherit !important;
+	-webkit-tap-highlight-color: transparent !important;
+}

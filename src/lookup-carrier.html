@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Node Email2SMS | Home</title>
+	<link rel="stylesheet" href="stylesheets/main.scss">
+	<script type="module" src="javascripts/app.js"></script>
+</head>
+<body>
+	<a class="skip-link" href="#main" tabindex="1">Skip to main content</a>
+	
+	<header>
+		<nav id="primary-navigation">
+			<ul class="navbar-elements">
+				<li><a href="index.html" class="site-logo">LOGO</a></li>
+				<li>
+					<button type="button" id="menu-button" aria-expanded="false" aria-controls="navigation-list">
+						<span class="text-content">Menu</span>
+					</button>
+				</li>
+			</ul>
+			<ul id="navigation-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="lookup-carrier.html" aria-current="page">Lookup Carrier</a></li>
+				<li><a href="send-message.html">Send Message</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="help.html">Help</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="main-content">
+		<section class="site-and-page-header">
+			<hgroup>
+				<h1>Node Email2SMS</h1>
+				<p>Carrier Lookup</p>
+			</hgroup>
+		</section>
+		<section id="about-section">
+			<h2>Lookup</h2>
+			<form id="carrier-lookup-form">
+
+				<fieldset>
+					<legend>Details</legend>
+
+					<label for="phone-input">Phone Number</label>
+					<input type="tel" name="phone-input" id="phone-input" placeholder="1234567890" accept="[0-9]" maxlength="11" inputmode="tel" required>
+					<p class="input-hint">Do not include country code, spaces, dashes, or anything other than numbers.</p>
+				</fieldset>
+
+				<input type="submit" value="Lookup Carrier" class="primary" id="carrier-lookup-form-submit">
+			</form>
+
+
+			
+		</section>
+		<section id="result-section">
+			<h2>Results</h2>
+			<pre class="carrier-lookup-results-wrapper"><code id="carrier-lookup-result">
+				...
+			</code></pre>
+		</section>
+	</main>
+
+	<footer>
+		<p>Copyright &copy; 2024. All Rights Reserved.</p>
+	</footer>
+
+	<script src="javascripts/carrier-lookup.js" type="module"></script>
+</body>
+</html>
