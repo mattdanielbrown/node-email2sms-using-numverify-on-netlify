@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 				var carrierResult = result.carrier;
 
 				// Display the result in the HTML element with id "carrier-lookup-results"
-				document.getElementById("carrier-lookup-results").innerText = "Carrier: " + carrierResult;
+				document.getElementById("carrier-lookup-result").innerText = "Carrier: " + carrierResult;
 			})
 			// .then(result => handleResult(result))
 			.catch(error => console.log('error', error));
