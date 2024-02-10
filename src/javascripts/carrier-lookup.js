@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		// 				console.error('There was a problem with the fetch operation:', error);
 		// 			});
 
-		const myHeaders = new Headers();
+		let myHeaders = new Headers();
 		myHeaders.append("apikey", accessKey);
 
 		const requestOptions = {
@@ -57,13 +57,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		};
 
 		fetch(url, requestOptions)
-			.then(response => response.text())
-			.then(result => {
+			.then(response => response.json())
+			.then((result) => {
 				// Extract the "carrier" property from the result
 				var carrierResult = result.carrier;
 
 				// Display the result in the HTML element with id "carrier-lookup-results"
 				document.getElementById("carrier-lookup-result").innerText = "Carrier: " + carrierResult;
+
 			})
 			// .then(result => handleResult(result))
 			.catch(error => console.log('error', error));
@@ -77,7 +78,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		// const url = `http://apilayer.net/api/validate?access_key=${accessKey}&number=${phoneNumber}`;
 		const url = `https://api.apilayer.com/number_verification/validate?number=${phoneNumber}`;
 
-		performApiFetch(url, carrierLookupResults);
+		performApiFetch(url, carrierLookupResults, carrierLookupResults);
 	});
 
 
