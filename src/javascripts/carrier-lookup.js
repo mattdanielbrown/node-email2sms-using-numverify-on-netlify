@@ -1,7 +1,8 @@
 'use strict';
 
 require('dotenv').config();
-const apiKey = process.env.API_KEY;
+// const apiKey = process.env.API_KEY;
+const apiKey = process.env.API_ACCESS_KEY;
 // Global variable to store the phone number carrier
 const accessKey = apiKey;
 let phoneNumber;
