@@ -19,8 +19,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	function handleResult(result) {
 		console.log(result);
 		console.log("\n");
-		console.log("CARRIER " + result[8]);
-		carrierLookupResults.innerText = result[8];
+		console.log("CARRIER " + result.carrier);
+		carrierLookupResults.innerText = result.carrier;
 	}
 
 	function performApiFetch(url, resultsElement) {
