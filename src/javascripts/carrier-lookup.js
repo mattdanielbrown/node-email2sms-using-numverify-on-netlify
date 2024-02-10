@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 		phoneNumber = phoneNumberInput.value;
 		// const url = `http://apilayer.net/api/validate?access_key=${accessKey}&number=${phoneNumber}`;
-		const url = `http://api.apilayer.com/number_verification/validate?number=${phoneNumber}`;
+		const url = `https://api.apilayer.com/number_verification/validate?number=${phoneNumber}`;
 
 		performApiFetch(url, carrierLookupResults);
 	});
