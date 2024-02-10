@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 		fetch(url, requestOptions)
 			.then(response => response.json())
-			.then((result) => {
+			.then(result => {
 				// Extract the "carrier" property from the result
 				var carrierResult = result.carrier;
 
