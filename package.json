@@ -13,7 +13,7 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.11.0",
+    "@parcel/transformer-sass": "2.15.4",
     "autoprefixer": "^10.4.17",
     "buffer": "^5.5.0||^6.0.0",
     "crypto-browserify": "^3.12.0",
