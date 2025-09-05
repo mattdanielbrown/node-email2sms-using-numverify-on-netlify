@@ -27,7 +27,7 @@
     "stream-browserify": "^3.0.0"
   },
   "dependencies": {
-    "dotenv": "^16.4.1",
+    "dotenv": "^17.2.1",
     "inter-ui": "^4.0.2",
     "modern-normalize": "^2.0.0",
     "sanitize.css": "^13.0.0"
