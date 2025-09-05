@@ -1481,10 +1481,10 @@ inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.4:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
-inter-ui@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/inter-ui/-/inter-ui-4.0.2.tgz#e1bcfcaad509a084396e22cb23480df8caa9a8a2"
-  integrity sha512-YmfzwEtzuVzEenQwSB/tmmqi/A0a2GnFk4mG4ZFULXiO5DNk0fJWiO3o9i1sdVKuMVGx9iiNQnCq8ghWZJVVHw==
+inter-ui@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/inter-ui/-/inter-ui-4.1.1.tgz#8d7e800259caeb4293167564ddc2b12dbf2ba59d"
+  integrity sha512-451h0J29HyOmA+JXgSi/6M12tL7ZCZ8arYKZUXiOXTJpJbAKqJvFh3k5SiV3x7tKe0C0KyrKUUiQIvvZ2PQDcA==
 
 is-arrayish@^0.2.1:
   version "0.2.1"
