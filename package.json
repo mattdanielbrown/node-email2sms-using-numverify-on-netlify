@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "dotenv": "^16.4.1",
-    "inter-ui": "^4.0.2",
+    "inter-ui": "^4.1.1",
     "modern-normalize": "^2.0.0",
     "sanitize.css": "^13.0.0"
   }
